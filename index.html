@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belleza Pura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="/"><img src="assets/logo.png" alt="logoDaMarca" id="headerLogo"></a>
+            <button class="hamburger"></button>
+            <ul class="nav-list">
+                <li><a href="#hero" id="linkHeader">Início</a></li>
+                <li><a href="#sobre" id="linkHeader">Sobre</a></li>
+                <li><a href="#produtos" id="linkHeader">Produtos</a></li>
+                <li><a href="#comentarios" id="linkHeader">Comentários</a></li>
+                <li><a href="#contato" id="linkHeader">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="assets/imgHero2.jpg" alt="skinCare">
+        <div id="heroText">
+            <h1>BEM-VINDO À BELLEZA PURA</h1>
+            <p>Explore nossa nova linha de cosméticos veganos e sustentáveis.</p>
+            <button class="buttonDefault" role="button" id="scrollButton">Saiba Mais</button>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Nossos valores incluem sustentabilidade, qualidade e amor à natureza.</p>
+        <div class="valores-card">
+            <img src="assets/planet-earth.png" alt="Valor 1">
+            <h4>Sustentabilidade RESPONSÁVEL</h4>
+            <p id="descricao">Preservar o planeta é o nosso compromisso. Cada etapa do processo é pensada para minimizar impactos ambientais.</p>
+        </div>
+        <div class="valores-card">
+            <img src="assets/quality.png" alt="Valor 2">
+            <h4>Qualidade INIGUALÁVEL</h4>
+            <p id="descricao">Oferecemos produtos que unem eficácia e segurança, garantindo uma experiência única e transformadora para você.</p>
+        </div>
+        <div class="valores-card">
+            <img src="assets/landscape.png" alt="Valor 3">
+            <h4>Conexão com a NATUREZA</h4>
+            <p id="descricao">Inspirados pela beleza natural, criamos produtos que respeitam a biodiversidade e celebram o amor ao meio ambiente.</p>            
+        </div>
+    </section>
+
+    <section id="produtos">
+        <h2>Produtos</h2>
+
+        <div id="categoriasProdutos">
+            <h3>Skin Care</h3>
+
+            <div class="produto-card">
+                <img src="assets/radianceBoost.png" alt="Radiance Boost" id="produtoImg">
+                <h3>Sérum Facial Vegano - Radiance Boost</h3>
+                <p id="preco">R$ 99,90</p>
+                <button class="buttonDefault verMais" role="button" data-nome="Sérum Facial Vegano - Radiance Boost" 
+                data-desc="Descrição: Um sérum poderoso para revitalizar a pele, uniformizar o tom e reduzir linhas finas. Combina ingredientes naturais com tecnologia avançada para um brilho saudável.<br><br>
+                Destaques:
+                <br>
+                - Enriquecido com vitamina C e extrato de chá verde.<br>
+                - Absorção rápida e toque seco.<br>
+                - Fórmula 100% natural e livre de testes em animais." 
+                data-preco="R$ 99,90" 
+                data-img="assets/radianceBoost.png">Ver Mais</button>
+                
+            </div>
+
+            <div class="produto-card">
+                <img src="assets/pureGlow.png" alt="Pure Glow" id="produtoImg">
+                <h3>Gel de Limpeza Facial Vegano - Pure Glow</h3>
+                <p id="preco">R$ 59,90</p>
+                <button class="buttonDefault verMais" role="button" data-nome="Gel de Limpeza Facial Vegano - Pure Glow" 
+                data-desc="Descrição: Um gel de limpeza suave que remove impurezas sem ressecar a pele. Ideal para quem busca frescor e cuidado diário.<br><br>
+                Destaques:<br>
+                - Com aloe vera e extrato de pepino.<br>
+                - Adequado para todos os tipos de pele, incluindo as sensíveis.<br>
+                - Livre de sulfatos e fragrâncias artificiais." 
+                data-preco="R$ 59,90" 
+                data-img="assets/pureGlow.png">Ver Mais</button>
+            </div>
+
+            <div class="produto-card">
+                <img src="assets/greenDetox.png" alt="Green Detox" id="produtoImg">
+                <h3>Máscara Facial Vegana - Green Detox</h3>
+                <p id="preco">R$ 49,90</p>
+                <button class="buttonDefault verMais" role="button" data-nome="Máscara Facial Vegana - Green Detox" 
+                data-desc="Descrição: Máscara detox à base de argila verde, perfeita para purificar e renovar a pele, reduzindo poros visíveis e controlando a oleosidade.<br><br>
+                Destaques:
+                <br>
+                - Com argila verde e carvão ativado.<br>
+                - Efeito refrescante e revitalizante.<br>
+                - Embalagem sustentável e certificada." 
+                data-preco="R$ 49,90" 
+                data-img="assets/greenDetox.png">Ver Mais</button>
+            </div>
+        </div>
+
+        <div id="categoriasProdutos"></div>
+            <h3>Hidratantes</h3>
+
+            <div class="produto-card">
+                <img src="assets/freshDew.png" alt="Fresh Dew" id="produtoImg">
+                <h3>Hidratante Facial Vegano - Fresh Dew</h3>
+                <p id="preco">R$ 79,90</p>
+                <button class="buttonDefault verMais" role="button" data-nome="Hidratante Facial Vegano - Fresh Dew" 
+                data-desc="Descrição: Uma fórmula leve e refrescante que hidrata profundamente enquanto acalma a pele. Ideal para uso diário, proporciona um brilho natural e saudável.
+                <br><br>
+                Destaques:
+                <br>
+                - Enriquecido com ácido hialurônico e camomila.<br>
+                - Textura não oleosa, ideal para todos os tipos de pele.<br>
+                - Embalagem feita de plástico reciclado." 
+                data-preco="R$ 79,90" 
+                data-img="assets/freshDew.png">Ver Mais</button>
+            </div>
+
+            <div class="produto-card">
+                <img src="assets/silkySkin.png" alt="Silky Skin" id="produtoImg">
+                <h3>Hidratante Corporal Vegano - Silky Skin</h3>
+                <p id="preco">R$ 89,90</p>
+                <button class="buttonDefault verMais" role="button" data-nome="Hidratante Corporal Vegano - Silky Skin" 
+                data-desc="Descrição: Nutre e revitaliza a pele do corpo com sua fórmula rica e de rápida absorção. Deixa a pele macia e suavemente perfumada.<br><br>
+                Destaques:
+                <br>
+                - Com manteiga de karité e óleo de coco.<br>
+                - Sem parabenos, silicones ou sulfatos.<br>
+                - Fragrância natural de lavanda e baunilha." 
+                data-preco="R$ 89,90" 
+                data-img="assets/silkySkin.png">Ver Mais</button>
+            </div>
+
+            <div class="produto-card">
+                <img src="assets/soft touch.png" alt="Soft Touch" id="produtoImg">
+                <h3>Hidratante para as Mãos Vegano - Soft Touch</h3>
+                <p id="preco">R$ 39,90</p>
+                <button class="buttonDefault verMais" role="button" data-nome="Hidratante para as Mãos Vegano - Soft Touch" 
+                data-desc="Descrição: Um creme hidratante para as mãos que repara e protege contra o ressecamento. Perfeito para levar na bolsa e usar sempre que necessário.<br><br>
+                Destaques:
+                <br>
+                - Fórmula com óleo de amêndoas e vitamina E.<br>
+                - Textura leve e de rápida absorção.<br>
+                - Sem fragrâncias artificiais e com certificado cruelty-free." 
+                data-preco="R$ 39,90" 
+                data-img="assets/soft touch.png">Ver Mais</button>
+            </div>
+        </div>
+        
+        <div id="categoriasProdutos"></div>
+            <h3>Maquiagens</h3>
+
+            <div class="produto-card">
+                <img src="assets/Natural glow2.png" alt="Natural Glow" id="produtoImg">
+                <h3>Base Líquida Vegana - Natural Glow</h3>
+                <p id="preco">R$ 89,90</p>
+                <button class="buttonDefault verMais" role="button" data-nome="Base Líquida Vegana - Natural Glow" 
+                data-desc="Descrição: Proporciona uma cobertura leve e uniforme, com ingredientes que hidratam e cuidam da pele. Livre de toxinas e perfeita para todos os tipos de pele.<br><br>
+                Destaques:
+                <br>
+                - Disponível em 10 tonalidades.<br>
+                - Enriquecida com óleo de jojoba e aloe vera.<br>
+                - Embalagem reciclável e sustentável." 
+                data-preco="R$ 89,90" 
+                data-img="assets/Natural glow2.png">Ver Mais</button>
+            </div>
+
+            <div class="produto-card">
+                <img src="assets/bloomLips.png" alt="Bloom Lips" id="produtoImg">
+                <h3>Batom Vegano - Bloom Lips</h3>
+                <p id="preco">R$ 49,90</p>
+                <button class="buttonDefault verMais" role="button" data-nome="Batom Vegano - Bloom Lips" 
+                data-desc="Descrição: Um batom com cores vibrantes e acabamento acetinado, feito com manteiga de karité e pigmentos naturais. Deixa os lábios macios e hidratados.<br><br>
+                Destaques:
+                <br>
+                - Disponível em 8 cores (incluindo nudes e tons vibrantes).<br>
+                - Fórmula cremosa e de longa duração.<br>
+                - Livre de parabenos e fragrâncias artificiais." 
+                data-preco="R$ 49,90" 
+                data-img="assets/bloomLips.png">Ver Mais</button>
+            </div>
+
+            <div class="produto-card">
+                <img src="assets/pureLash.png" alt="Pure Lash" id="produtoImg">
+                <h3>Máscara de Cílios Vegana - Pure Lash</h3>
+                <p id="preco">R$ 59,90</p>
+                <button class="buttonDefault verMais" role="button" data-nome="Sérum Facial Vegano - Radiance Boost" 
+                data-desc="Descrição: A máscara perfeita para alongar e dar volume aos cílios, formulada com cera vegetal e pigmentos naturais. Não gruda nem esfarela!<br><br>
+                Destaques:
+                <br>
+                - À prova d’água.<br>
+                - Escova de aplicação ergonômica para cílios definidos.<br>
+                - Não testada em animais e 100% vegana." 
+                data-preco="R$ 59,90" 
+                data-img="assets/pureLash.png">Ver Mais</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Modal -->
+    <div id="produtoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-left">
+                <img src="" alt="Produto" id="modalImg">
+            </div>
+            <div class="modal-right">
+                <h3 id="modalNome"></h3>
+                <p id="modalDesc"></p>
+                <p id="modalPreco"></p>
+                <a href="#" id="whatsappLink" target="_blank">
+                    <button class="buttonDefault">Pedir pelo WhatsApp</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="comentarios">
+        <h2>O Que Nossos Clientes Dizem</h2>
+        <div class="carrossel-container">
+            <div class="carrossel">
+                <div class="carrossel-item">
+                    <div class="cliente-info">
+                        <img src="assets/pablo.jpg" alt="Foto de Pablo" class="cliente-foto">
+                        <span class="cliente-nome">Pablo Alves Freire</span>
+                    </div>
+                    <p>"A Belleza Pura transformou minha rotina de cuidados. Produtos incríveis!"</p>
+                </div>
+                <div class="carrossel-item">
+                    <div class="cliente-info">
+                        <img src="assets/joao.jpg" alt="Foto de João" class="cliente-foto">
+                        <span class="cliente-nome">João Guilherme Oliveira</span>
+                    </div>
+                    <p>"A linha vegana é perfeita. Sinto minha pele renovada e mais saudável!"</p>
+                </div>
+                <div class="carrossel-item">
+                    <div class="cliente-info">
+                        <img src="assets/ana.jpg" alt="Foto de Ana" class="cliente-foto">
+                        <span class="cliente-nome">Ana Cecilia Matos</span>
+                    </div>
+                    <p>"Simplesmente apaixonada pela qualidade e propósito sustentável."</p>
+                </div>
+            </div>
+            <button id="prev" class="carrossel-btn">❮</button>
+            <button id="next" class="carrossel-btn">❯</button>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h3>Cadastre-se para receber 25% de desconto na sua primeira compra e ficar por dentro de todas as novidades em primeira mão!</h3>
+        <form id="leadForm">
+            <input class="inputDefault" type="text" name="nome" placeholder="Seu nome" required>
+            <input class="inputDefault" type="email" name="email" placeholder="Seu e-mail" required>
+            <button type="submit" class="buttonDefault" role="button">Cadastrar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footerLeft">
+            <img src="assets/logo.png" alt="logoDaMarca" id="footerLogo">
+        </div>
+        <div class="footerRight">
+            <h4>Siga-nos nas redes sociais:</h4>
+            <figure>
+                <a href="#"><img src="assets/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="assets/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="assets/whatsapp.png" alt="whatsapp"></a>             
+            </figure>
+        </div>
+        <p>&copy; 2024 Belleza Pura. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
